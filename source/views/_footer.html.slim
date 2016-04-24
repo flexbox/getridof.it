@@ -1,0 +1,13 @@
+footer class="android-footer mdl-mega-footer"
+  div class="mdl-mega-footer--top-section"
+    div class="mdl-mega-footer--right-section"
+      a class="mdl-typography--font-light" href="#top"
+        'Back to Top
+        i class="material-icons" expand_less
+
+  div class="mdl-mega-footer--middle-section"
+    p class="mdl-typography--font-light"
+      =' data.settings.site.title
+      '©
+      time datetime="#{Date.today.strftime('%B %-d, %Y')}"
+        = Date.today.strftime('%Y')

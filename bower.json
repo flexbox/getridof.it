@@ -1,7 +1,7 @@
 {
-  "name": "codeless",
+  "name": "getridofit",
   "version": "0.0.1",
-  "homepage": "https://github.com/flexbox/codeless",
+  "homepage": "https://github.com/flexbox/getridofit",
   "authors": [
     "flexbox <dleuliette@gmail.com>"
   ],
@@ -14,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.1",
+    "material-design-lite": "^1.1.3"
+  }
 }

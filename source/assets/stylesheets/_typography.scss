@@ -1,0 +1,41 @@
+$font-weight-bolder: 800;
+
+$body-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+
+$header-font-family: 'Open Sans', sans-serif;
+$header-font-weight: $font-weight-bolder;
+$header-font-style: bold;
+
+
+// Setup the function in your functions or helpers files, wherever you keep these bits.
+@function headings($from:1, $to:6) {
+  @if $from == $to {
+    @return 'h#{$from}';
+  } @else {
+    @return 'h#{$from},' + headings($from+1, $to);
+  }
+}
+
+// Then call it with the rules/styles you want wherever you want (As long as the file/include has access to the above function of course).
+#{headings(1,6)} {
+  font-family: $header-font-family;
+  font-weight: $font-weight-bolder;
+  letter-spacing: -4px;
+  opacity: 0.5;
+}
+
+body {
+  font-family: $body-font-family;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.mdl-layout-title {
+  color: $green;
+  @extend h3;
+  letter-spacing: 0;
+  opacity: 1;
+}

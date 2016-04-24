@@ -1,9 +1,72 @@
 ---
 title: Homepage
-description: 'Write less code, solve more problems'
-twitter_card_img: ''
+description: "Write less code, solve more problems"
+twitter_card_img: ""
 ---
 
-h1 = data.settings.site.title
-p = data.settings.site.description
-= link_to 'Get started', data.settings.site.url
+.android-be-together-section.mdl-typography--text-center
+  h1.android-slogan
+    'Be happier — with less things
+  p.android-sub-slogan
+    = data.settings.site.description
+
+  a href="#screens"
+    button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"
+      i class="material-icons" expand_more
+
+
+
+div class="android-screen-section mdl-typography--text-center"
+  a name="screens"
+  h2 Living with less
+
+.section--center.mdl-grid.mdl-grid--no-spacing style="max-width: 600px;"
+  .mdl-cell.mdl-cell--12-col
+    p 
+      'There is a huge trend that to be happier you should own less things. Here is the guy who only owns 111 things. This isn’t new, Graham Hill in the NY Times in 2013 was already explaining why he was
+      strong Living With Less. A Lot Less.
+    p
+      'I really feel this way too. So here is the app we need,
+      strong it’s very simple.
+
+    markdown:
+      You take a photo of pretty much everything you own. Those books. That old iPad. That bag of ski gear you won’t use until next year.
+      It will already be liberating to store everything you have into one app. It’s like your todo list. Your brain feels really lighter if you keep a to-do list as you know it’s stored there. Same with your stuff, less to worry about if it’s all somewhere.
+      On every single item then there are possible actions.
+
+.section-feature
+  section.mdl-grid
+    div class="section__img-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+      = svg 'sell'
+    div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+      h2 Sell.
+      markdown:
+        You can decide to __sell that old iPad__, and a service helps you assess how much it’s worth and comes to your place to take it and gives you a check.
+    div class="section__img-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+      = svg 'store'
+    div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+      h2 Store.
+      markdown:
+        You can __decide to store__ that huge bag of ski gear you won’t need until next year. A storage company comes and picks it up within two hours then you know it’s in storage and can get it back when you need it.
+
+  section.mdl-grid
+    div class="section__img-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+      = svg 'lend'
+    div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+      h2 Lend or rent.
+      markdown:
+        If you don’t need it __someone else could use it__. Like I let many of my friends use my place for free. I would rent my car too, I need to try one of those services.
+    div class="section__img-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+      = svg 'repair'
+    div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+      h2 Repair.
+      markdown:
+        I have furniture and __stuff that need repair or upgrades__. It could all be seamlessly taken care of.
+
+  section.mdl-grid
+    div class="section__img-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+      = svg 'donate'
+    div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+      h2 Donate.
+      markdown:
+        That old iMac. You’re not sure if it’s worth much. __Just donate__. The app will give you options. Near you too, that school that would love it.
