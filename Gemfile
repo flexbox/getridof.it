@@ -2,7 +2,7 @@
 # the following line to use 'https'
 source 'http://rubygems.org'
 
-gem 'middleman',               '~> 3.4.1'
+gem 'middleman',               '~> 3.3.12'
 gem 'middleman-autoprefixer',  '~> 2.5.0'
 gem 'middleman-deploy',        '~> 1.0.0'
 gem 'middleman-favicon-maker', '~> 3.7'
