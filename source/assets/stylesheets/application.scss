@@ -3,6 +3,8 @@
 @import 'colors';
 @import 'material-design-lite/material';
 @import 'styles';
-@import 'picture';
-@import 'section';
-@import 'typography';
+
+@import 'atoms/picture';
+@import 'atoms/typography';
+
+@import 'molecules/section';

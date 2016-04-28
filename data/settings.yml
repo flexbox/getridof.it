@@ -1,7 +1,7 @@
 site:
   title: getridof.it
   title_separator: •
-  description: 'Welcome to getridof.it… be yourself. do your thing. see what’s going on.'
+  description: 'An application to help you possess memories not things'
   i18n: en
   geo:
     placename: 'Lille, Nord'

@@ -14,7 +14,14 @@ twitter_card_img: ""
     button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect"
       i class="material-icons" expand_more
 
-  / = partial 'views/mailchimp'
+
+  .mdl-grid
+    .mdl-cell.mdl-cell--3-col
+    .mdl-cell.mdl-cell--6-col
+      .section-hero--form
+        = partial 'views/mailchimp'
+    .mdl-cell.mdl-cell--3-col
+  
 
 div class="android-screen-section mdl-typography--text-center"
   a name="screens"
