@@ -1,3 +1,4 @@
+$font-weight-bold:   700;
 $font-weight-bolder: 800;
 
 $body-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -38,4 +39,8 @@ p {
   @extend h3;
   letter-spacing: 0;
   opacity: 1;
+}
+
+strong {
+  font-weight: $font-weight-bold;
 }

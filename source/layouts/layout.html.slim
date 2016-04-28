@@ -5,7 +5,7 @@ html lang="#{data.settings.site.i18n}"
     = partial 'views/commons/meta_tags'
     = partial 'views/commons/favicon'
     = stylesheet_link_tag 'application'
-    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:800|PT+Sans'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:800|PT+Sans:400,700'
     = stylesheet_link_tag 'https://fonts.googleapis.com/icon?family=Material+Icons'
     = yield_content :head
 
@@ -17,5 +17,6 @@ html lang="#{data.settings.site.i18n}"
         == yield
         == partial 'views/footer'
 
+    = javascript_include_tag '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
     = javascript_include_tag 'application'
     = yield_content :javascripts
