@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://getridof.itsitemap.xml
+Sitemap: http://getridof.it/sitemap.xml
