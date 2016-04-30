@@ -1,11 +1,21 @@
-footer class="android-footer mdl-mega-footer"
-  div class="mdl-mega-footer--top-section"
-    div class="mdl-mega-footer--right-section"
+.mdl-mega-footer.section-footer
+  .mdl-grid
+    .mdl-cell.mdl-cell--3-col
+    .mdl-cell.mdl-cell--6-col
+      h3 What are you waiting for?
+      p
+        strong> Join 15O+ early adopters
+        '& be notified for the launch
+      = partial 'views/mailchimp'
+
+footer.android-footer.mdl-mega-footer
+  .mdl-mega-footer--top-section
+    .mdl-mega-footer--right-section
       a class="mdl-typography--font-light" href="#top"
         'Back to Top
         i class="material-icons" expand_less
 
-  div class="mdl-mega-footer--middle-section"
+  .mdl-mega-footer--middle-section
     p class="mdl-typography--font-light"
       => data.settings.site.title
       '©

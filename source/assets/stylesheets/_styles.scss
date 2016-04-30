@@ -66,6 +66,9 @@ a img{
   width: 140px;
 }
 
+.mdl-layout__header-row {
+  justify-content: center;
+}
 
 .android-header {
   overflow: visible;
@@ -488,6 +491,7 @@ a img{
     font-size: 26px;
     margin: 0 16px;
     padding-top: 24px;
+    letter-spacing: 0;
   }
 
   .android-sub-slogan {
