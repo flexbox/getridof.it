@@ -10,6 +10,7 @@ site:
   url: 'http://getridof.it'
   logo: 'https://raw.githubusercontent.com/flexbox/getridofit/master/source/favicon_base.png'
   author: David Leuliette
+  analytics_id: 'UA-77196238-1'
 
 social:
   twitter: '_flexbox'

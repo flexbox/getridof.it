@@ -14,6 +14,18 @@ configure :development do
   BetterErrors.application_root = __dir__
 end
 
+###
+# Analytics
+###
+
+activate :google_analytics do |ga|
+  ga.tracking_id = data.settings.site.analytics_id
+  ga.anonymize_ip = true
+  ga.debug = false
+  ga.development = false
+  ga.minify = true
+end
+
 activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'gh-pages'
@@ -60,8 +72,4 @@ configure :build do
   activate :robots,
     rules: [{:user_agent => '*', :allow => %w(/)}],
     sitemap: data.settings.site.url+'/sitemap.xml'
-
-  # Use this for github.io gh-pages
-  # activate :relative_assets
-  # set :relative_links, true
 end
